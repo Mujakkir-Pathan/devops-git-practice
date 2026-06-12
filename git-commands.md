@@ -286,3 +286,87 @@ git cherry-pick <commit-id>
 - Must manually fix files and run:
 git add <file>
 git commit
+
+# Git Reset & Revert (Day 25)
+
+## Reset
+
+### git reset --soft
+
+Purpose: Move HEAD to a previous commit while keeping changes staged.
+
+Example:
+
+```
+git reset --soft HEAD~1
+```
+
+### git reset --mixed
+
+Purpose: Move HEAD to a previous commit and unstage changes.
+
+Example:
+
+```
+git reset --mixed HEAD~1
+```
+
+### git reset --hard
+
+Purpose: Move HEAD to a previous commit and discard all local changes.
+
+Example:
+
+```
+git reset --hard HEAD~1
+```
+
+---
+
+## Revert
+
+### git revert
+
+Purpose: Create a new commit that undoes an existing commit.
+
+Example:
+
+```
+git revert <commit-id>
+```
+
+### Revert With Conflict
+
+Purpose: Continue revert after resolving conflicts.
+
+Example:
+
+```
+git revert --continue
+```
+
+### Abort Revert
+
+Purpose: Cancel an ongoing revert operation.
+
+Example:
+
+```
+git revert --abort
+```
+
+---
+
+## Recovery Commands
+
+### git reflog
+
+Purpose: View all HEAD movements and recover lost commits.
+
+Example:
+
+```
+git reflog
+```
+
+---
