@@ -383,3 +383,43 @@ git reflog
 
 ---
 
+
+# GitHub CLI (gh)
+
+gh auth login
+gh auth status
+
+gh repo create
+gh repo clone
+gh repo view
+gh repo list
+gh repo delete
+
+gh issue create
+gh issue list
+gh issue view
+gh issue close
+
+gh pr create
+gh pr list
+gh pr view
+gh pr review
+gh pr merge
+gh pr checkout
+
+gh run list
+gh run view
+gh run watch
+
+gh workflow list
+gh workflow run
+
+gh api
+gh gist create
+gh gist list
+
+gh release create
+gh release list
+
+gh alias set
+gh search repos
